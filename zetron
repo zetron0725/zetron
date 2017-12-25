@@ -1,0 +1,7 @@
+#!/data/data/com.termux/files/usr/bin/bash
+cd $HOME
+echo "Enter Your Name : " 
+read input
+echo -e "\e[00;36m$(figlet -d my_folder/fonts -f epic.flf $input )\e[00m " | pv -qL 50 ;
+cd $HOME
+echo -e "\e[01;32m $input is cool..\e[00m" | pv -qL 60;
